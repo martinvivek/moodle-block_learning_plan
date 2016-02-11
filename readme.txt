@@ -1,4 +1,5 @@
-Learning Plan Block 
+Learning Plan Block
+For Moodle
 
 Author: Azmat Ullah, Talha Noor
 
