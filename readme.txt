@@ -1,5 +1,5 @@
 Learning Plan Block
-For Moodle
+For Moodle 3.0
 
 Author: Azmat Ullah, Talha Noor
 
