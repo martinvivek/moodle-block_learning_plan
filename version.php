@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -22,7 +22,7 @@
  * @copyright  Copyrights © 2012 - 2014 | 3i Logic (Pvt) Ltd.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$plugin->version   =   2014082003;        // The current plugin version (Date: YYYYMMDDXX)
+$plugin->version   =   2016021200;        // The current plugin version (Date: YYYYMMDDXX)
 $plugin->requires  =   2010112400;        // Requires Moodle 2.1 or later
 $plugin->release = '2.8';
 $plugin->maturity = MATURITY_STABLE;
