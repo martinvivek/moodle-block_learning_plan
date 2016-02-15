@@ -1,6 +1,5 @@
-Learning Plan Block
-
-
+Learning Plan Block 
+Updated on 15-feb-2016
 Author: Azmat Ullah, Talha Noor
 
 Plugin Installation:
