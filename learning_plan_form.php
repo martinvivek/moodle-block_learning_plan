@@ -116,8 +116,8 @@ class training_form extends moodleform {
         // $mform->addElement('file', 'attachment', get_string('attachment', 'block_learning_plan'), $attributes );
         // $mform->addElement('filepicker', 'attachment', get_string('attachment', 'block_learning_plan'), null, $attributes);
         $mform->addElement('text', 'url', get_string('url', 'block_learning_plan'));
-        $mform->addRule('url', get_string('wrong_url', 'block_learning_plan'), 'regex', '/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i', 'client');
-        $mform->setType('url', PARAM_LOCALURL);
+        $mform->addRule('url', get_string('wrong_url', 'block_learning_plan'), 'regex', '/\b(?:(?:https?|:http?|ftp):\/\/)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i', 'client');
+        //$mform->setType('url', PARAM_LOCALURL);
         $mform->addElement('date_time_selector', 'start_date', get_string('start_date', 'block_learning_plan'));
         $mform->addElement('date_time_selector', 'end_date', get_string('end_date', 'block_learning_plan'));
         $mform->addElement('static', 'errormsg');
@@ -469,7 +469,7 @@ class search extends moodleform {
                 $row[] = date('d-m-Y', $log->date2);
                 $row[] = status_value($log->status);
                 $row[] = format_string($log->remarks);
-                $row[] = '<a href="' . $CFG->wwwroot . '/blocks/learning_plan/view.php?viewpage=6&l_id=' . $log->lp_id . '&u_id=' . $log->id . '&t_id=' . $log->t_id . '&setting=1">Modify</a>';
+                $row[] = '<a href="' . $CFG->wwwroot . '/blocks/learning_plan/view.php?viewpage=6&l_id=' . $log->lp_id . '&u_id=' . $log->id . '&t_id=' . $log->t_id . '&setting=1">Setting</a>';
                 // $row[] = '<center><center><a title="Remove" href="'.$CFG->wwwroot.'/blocks/learning_plan/view.php?viewpage=5&rem=remove&id='.$log->id.'"/>
                 // <img src="'.$OUTPUT->pix_url('t/delete') . '" class="iconsmall"/></a></center>';
                 $table->data[] = $row;
