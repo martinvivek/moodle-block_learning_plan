@@ -117,7 +117,7 @@ class training_form extends moodleform {
         // $mform->addElement('filepicker', 'attachment', get_string('attachment', 'block_learning_plan'), null, $attributes);
         $mform->addElement('text', 'url', get_string('url', 'block_learning_plan'));
         $mform->addRule('url', get_string('wrong_url', 'block_learning_plan'), 'regex', '/\b(?:(?:https?|:http?|ftp):\/\/)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i', 'client');
-        //$mform->setType('url', PARAM_LOCALURL);
+        $mform->setType('url', PARAM_LOCALURL);
         $mform->addElement('date_time_selector', 'start_date', get_string('start_date', 'block_learning_plan'));
         $mform->addElement('date_time_selector', 'end_date', get_string('end_date', 'block_learning_plan'));
         $mform->addElement('static', 'errormsg');
