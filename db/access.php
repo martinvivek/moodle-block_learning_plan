@@ -15,6 +15,17 @@ $capabilities = array(
             'coursecreator' => CAP_ALLOW,
             'manager' => CAP_ALLOW
         )
+    ),'block/learning_plan:myaddinstance' => array(
+       'riskbitmask'  => RISK_PERSONAL,
+       'captype'      => 'read',
+       'contextlevel' => CONTEXT_BLOCK,
+       'archetypes'   => array(
+         'user' => CAP_ALLOW,
+         'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW,
+           'student' => CAP_ALLOW,
+       ),
+       'clonepermissionsfrom' => 'moodle/my:manageblocks'
     ),
     'block/learning_plan:addinstance' => array(
         'riskbitmask' => RISK_SPAM | RISK_XSS,
